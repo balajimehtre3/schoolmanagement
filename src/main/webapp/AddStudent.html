@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Student Account Page</title>
+</head>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	
+}
+
+li {
+	float: left;
+	border-right: 3px solid #bbb;
+	
+}
+
+li:last-child {
+	border-right: 3px solid #bbb;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 34px 36px;
+	text-decoration: none;
+	
+}
+
+li a:hover {
+	background-color: #111;
+	align-content: left;
+}
+
+.active {
+	background-color: #04AA6D;
+}
+</style>
+<body align="center">
+	<div>
+		<ul>
+			<li><a href="AddStudent.html">Add Student</a></li>
+			<li><a href="UpdateStudent.jsp">Update Student</a></li>
+			<li><a href="DeleteStudent.jsp">Delete Student</a></li>
+			<li><a href="ViewStudent.jsp">View Student</a></li>
+			<li><a href="Final.html">Main Menu</a></li>
+		</ul>
+	</div>
+	<br>
+	<div>
+		<form action="AddStudent" method="post">
+			<fieldset style="font-style: italic; size: 80%;">
+				<legend ALIGN="CENTER">CREATE STUDENT ACCOUNT</legend>
+				<label> ID :<sup id="star">*</sup></label> <input
+					type="text" name="ID" ><br>
+				<br><label> NAME :<sup id="star">*</sup></label> <input type="TEXT"
+					name="NAME" ><br>
+				<br> <label> STREAM :<sup id="star">*</sup></label> <input
+					type="TEXT" name="STREAM" ><br>
+				<br> <label> FESS :<sup id="star">*</sup></label> <input
+					type="TEXT" name="FESS"
+					><br>
+				<pre>
+<input type="BUTTON" name="CANCEL" value="CANCEL">  <input
+						type="submit" name="SUBMIT" value="SUBMIT">  <input
+						type="reset" name="RESET" value="RESET">
+				</pre>
+
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
